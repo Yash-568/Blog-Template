@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: system-ui;
+        }
+
+        body{
+            background-color: black;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            color: white;
+            padding: 25px;
+        }
+
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .navbar ul li{
+            margin: 10px auto;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .title{
+            color: white;
+            text-align: center;
+            font-size: 45px;
+            padding: 40px;
+        }
+
+        .recent-bpost{
+            font-size: large;
+            margin: 15px;
+            padding: 20px;
+        }
+
+        .articles p{
+            padding: 10px;
+            color: purple;
+            font-weight: bolder;
+        }
+
+        .articles img{
+            width: 100%;
+            height: auto;
+            padding-top: 40px;
+        }
+
+        .span{
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .main-article, .sample-articles, .sample-articles-bottom {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .sample-articles-bottom {
+            grid-column: span 2;
+        }
+
+        .navbar ul li a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2>Your Name</h2>
+            </div>
+            <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <hr>
+
+    <div class="title">
+        <h1>THE BLOG</h1>
+    </div>
+
+    <hr>
+
+    <main>
+        <div class="container">
+            <div class="main-article">
+                <h4>Main Article</h4>
+                <article class="articles">
+                    <img src="https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg" alt="">
+                    <div class="span">
+                        <span>Sunday, 13 Dec 2024</span>
+                    </div>
+                    <h2>Lorem ipsum dolor sit, amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae facilis omnis. Totam, aut facere.</p>
+                </article>
+            </div>
+
+            <div class="sample-articles">
+                <h4>Sample Article</h4>
+                <article class="articles">
+                    <img src="https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg" alt="">
+                    <div class="span">
+                        <span>Sunday, 13 Dec 2024</span>
+                    </div>
+                    <h2>Lorem ipsum dolor sit, amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae facilis omnis. Totam, aut facere.</p>
+                </article>
+            </div>
+
+            <div class="sample-articles-bottom">
+                <h4>Additional Sample Article</h4>
+                <article class="articles">
+                    <img src="https://img.freepik.com/free-photo/modern-office-space-with-desktops-with-modern-computers-created-with-generative-ai-technology_185193-110089.jpg" alt="">
+                    <div class="span">
+                        <span>Sunday, 13 Dec 2024</span>
+                    </div>
+                    <h2>Lorem ipsum dolor sit, amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vitae facilis omnis. Totam, aut facere.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
